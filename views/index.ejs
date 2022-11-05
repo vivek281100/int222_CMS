@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS🏬🏪</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="link">CMS🏪🏪🏪</a>
+
+                </div>
+            </div>
+        </nav>
+    </header> -->
+    
+    <!-- include header-->
+    <%-include('include/_header.ejs')-%>
+    <!--/include header-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <a href="/add_user">
+                    <span class="text-gradient">Add User <i class="fa fa-user" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%-include('include/_show.ejs')-%>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+
+    <!-- include footer-->
+    <%-include('include/_footer.ejs')-%>
+    <!-- /include footer-->
+
+<!-- </body>
+</html> -->
